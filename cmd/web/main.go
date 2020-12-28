@@ -6,6 +6,13 @@ import (
 	"net/http"
 )
 
+//TODO 1
+//1) add INFO and ErrorLog
+//2) Create struct application
+//3) DI INFO and ErrorLog
+//4) Centralize Error Handling (touch helpers.go and add methods to application struct
+//	 for common err (server, client, notfound))
+//
 func main() {
 
 	addr := flag.String("addr", ":4000", "HTTP network address")

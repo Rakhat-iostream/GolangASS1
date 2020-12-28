@@ -39,6 +39,7 @@ func showSnippet(w http.ResponseWriter, r *http.Request) {
 		http.NotFound(w, r)
 		return
 	}
+	// DATABASE ID
 	fmt.Fprintf(w, "Display a psecific snippet with id %v", id)
 }
 
