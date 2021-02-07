@@ -5,13 +5,13 @@ services:
     environment:
       CONN: "postgresql://host.docker.internal/snippetbox?user=postgres&password=limara2015"
     depends_on:
-      - snippetboxdb
+      - snippetdatabase
     ports:
       - "4000:4000"
     build:
       dockerfile: Dockerfile
       context: .
-  snippetboxdb:
+  snippetboxdatabase:
     image: "postgres"
     restart: always
     environment:
